@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/notification_item"
+            android:icon="@drawable/bell_icon"
+            android:title="@string/notification"
+            app:actionLayout="@layout/layout_switch"
+            />
+
+        <item
+            android:id="@+id/reminder_item"
+            android:icon="@drawable/reminder"
+            android:title="@string/reminder"
+            app:actionLayout="@layout/layout_arrow"
+            />
+
+
+        <item
+            android:id="@+id/settings_item"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings"
+            app:actionLayout="@layout/layout_arrow"
+            />
+
+
+        <item
+            android:id="@+id/category_item"
+            android:icon="@drawable/money"
+            android:title="@string/category"
+            app:actionLayout="@layout/layout_arrow"
+            android:visible="false"
+            />
+
+        <item
+            android:id="@+id/privacy_item"
+            android:icon="@drawable/privacy_policy_2"
+            android:title="@string/privacy_policy"
+            app:actionLayout="@layout/layout_arrow"
+            />
+
+        <item
+            android:id="@+id/rate_us_item"
+            android:icon="@drawable/rating_star"
+            android:title="@string/rate_us"
+            app:actionLayout="@layout/layout_arrow"
+            />
+
+    </group>
+
+
+</menu>

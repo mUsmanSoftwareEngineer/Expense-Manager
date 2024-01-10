@@ -1,0 +1,125 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/md_transparent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
+
+    <style name="toolbar_main_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:padding">@dimen/dp_3</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/header_txt_color_purple</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="calcDialogStyle">@style/CustomCalcDialogStyle</item>
+
+        <item name="circularProgressIndicatorStyle">@style/Widget.App.CircularProgressIndicator</item>
+
+
+
+    </style>
+
+    <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textColor">@color/light_green</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="Widget.App.CircularProgressIndicator" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CircularProgressIndicator</item>
+        <item name="trackThickness">20dp</item>
+        <item name="android:indeterminateTint">@color/black</item>
+
+    </style>
+
+    <style name="ThemeOverlay.App.CircularProgressIndicator" parent="">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+
+    <style name="CustomCalcDialogStyle" parent="CalcDialogStyle">
+        <!-- You can customize the dialog's style here -->
+        <!-- This line changes the dialog's maximum height -->
+
+
+        <!-- These lines change the style of operation buttons -->
+        <item name="calcOperationBtnStyle">@style/CustomCalcOperationBtnStyle</item>
+        <item name="calcDialogButtonStyle">@style/CustomDialogBtnStyle</item>
+        <item name="calcOperationBtnColor">#000000</item>
+    </style>
+
+    <style name="CustomCalcOperationBtnStyle" parent="CalcOperationBtnStyle">
+        <!-- Don't forget to specify the parent! -->
+        <item name="android:textColor">#FFFDFD</item>
+
+
+    </style>
+
+    <style name="CustomDialogBtnStyle" parent="CalcDialogButtonStyle">
+        <!-- Don't forget to specify the parent! -->
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="CustomRatingBarStyle" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxHeight">50dp</item>
+    </style>
+
+
+    <color name="simpletooltip_background">@color/orange</color>
+    <color name="simpletooltip_text">@android:color/white</color>
+    <color name="simpletooltip_arrow">@color/orange</color>
+
+    <!--Difference 21-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!--Difference-->
+
+    <!--    <style name="sectionHeader"   parent="android:Widget.Holo.Light.TextView">-->
+    <!--        <item name="android:drawableBottom">@drawable/section_header</item>-->
+    <!--        <item name="android:drawablePadding">4dp</item>-->
+    <!--        <item name="android:layout_marginTop">8dp</item>-->
+    <!--        <item name="android:paddingLeft">4dp</item>-->
+    <!--        <item name="android:textAllCaps">true</item>-->
+    <!--        <item name="android:textColor">@color/emphasis</item>-->
+    <!--        <item name="android:textSize">14sp</item>-->
+    <!--    </style>-->
+
+    <style name="spinnerItemStyle">
+<!--            <item name="android:dropDownSelector">@drawable/drop_down_white</item>-->
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+
+    </style>
+
+    <dimen name="dp_3">3dp</dimen>
+</resources>

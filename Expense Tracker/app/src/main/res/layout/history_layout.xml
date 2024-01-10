@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transaction_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_4"
+    android:elevation="8dp"
+    android:weightSum="2"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/spending_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fuel"
+                    />
+
+                <LinearLayout
+                    android:layout_toEndOf="@id/spending_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/spending_cat_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="@string/category_name"
+                        android:textColor="@color/blackish_txt"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="18sp"
+                        android:maxLines="2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/spending_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note"
+                        android:textColor="@color/transaction_note_color"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/currency_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/currencySymbols"
+                    android:textColor="@color/blackish_txt"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:layout_toEndOf="@+id/currency_symbol"
+                    android:id="@+id/txt_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/balanceAmount"
+                    android:textColor="@color/blackish_txt"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="18sp"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_gravity="end"
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/transaction_note_color"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

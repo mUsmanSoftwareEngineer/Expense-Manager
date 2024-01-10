@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/account_details"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="0dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/account_details"-->
+<!--            android:textColor="@color/blackish"-->
+<!--            android:textSize="22sp"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:paddingEnd="0dp"-->
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:id="@+id/top_txt_view"-->
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/mainLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:elevation="8dp"
+        android:background="@drawable/bg_6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="40dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <RelativeLayout
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:paddingTop="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_below="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_15"
+                >
+
+                <io.github.ketzalv.validationedittext.ValidationEditText
+                    android:id="@+id/edit_account_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/category_name"
+                    android:textColorHint="@color/transaction_note_color"
+                    android:visibility="visible"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="50dp"
+                    android:cursorVisible="true"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+            <!--            <View-->
+            <!--                android:id="@+id/horizontalLine1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:layout_below="@+id/edit_category"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:background="@color/white"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:layout_marginStart="20dp" />-->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/total_account_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_income"
+                android:textColor="@color/white"
+                android:paddingTop="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_below="@+id/total_account_income"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_8"
+                >
+
+                <io.github.ketzalv.validationedittext.ValidationEditText
+                    android:id="@+id/total_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/total_income"
+                    android:textColorHint="@color/transaction_note_color"
+                    android:visibility="visible"
+                    android:paddingStart="20dp"
+                    android:cursorVisible="true"
+                    android:textColor="@color/blackish_txt"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="50dp"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/total_account_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_budget"
+                android:textColor="@color/white"
+                android:paddingTop="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_below="@+id/total_account_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_8"
+                >
+
+                <io.github.ketzalv.validationedittext.ValidationEditText
+                    android:id="@+id/total_budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/total_budget"
+                    android:textColorHint="@color/transaction_note_color"
+                    android:visibility="visible"
+                    android:cursorVisible="true"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/blackish_txt"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="50dp"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/mainLinear"
+        android:id="@+id/transaction_linear_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:elevation="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <ImageView
+            android:id="@+id/IconImg"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/account"
+            />
+
+        <ImageView
+            android:id="@+id/galleryImg"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/gallery"
+            />
+
+        <ImageView
+            android:id="@+id/cameraImg"
+            android:layout_marginStart="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/transaction_linear_5"
+        android:id="@+id/transaction_linear_6"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/accountImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/account"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_screen_color"
+    tools:context=".activities.BudgetActivity">
+
+    <RelativeLayout
+        android:id="@+id/budgetToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_button"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/iconTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="@string/budget"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/back"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/header_txt_color_purple"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:gravity="center|center_vertical"
+            android:layout_centerVertical="true"
+            android:elevation="4dp"
+            android:textAlignment="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/bg_7"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/deleteBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/delete"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/budgetToolBar"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transaction_amount"
+                android:textColor="@color/blackish_txt"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="visible"
+            android:elevation="8dp"
+            android:background="@drawable/bg_6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:id="@+id/add_budget_amount_relative"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_9"
+                    android:layout_weight="0.3"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/currency_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currencySymbols"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="22sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/budget_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@+id/currency_symbol"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/balanceAmount"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/blackish_txt"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="visible"
+            android:elevation="8dp"
+            android:background="@drawable/bg_9"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/date_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/budget_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_date"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="20dp"
+                    android:src="@drawable/drop_down_white"
+                    android:layout_height="15dp"
+                    app:tint="@color/purple"
+                    android:layout_marginEnd="10dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

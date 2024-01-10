@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956797754829",
+    "project_id": "fir-tra-exp1",
+    "storage_bucket": "fir-tra-exp1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956797754829:android:2069ed09ede7ad88303884",
+        "android_client_info": {
+          "package_name": "myapps.expensetracker.spendingmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956797754829-4t36ifpn5of6nt4c5c135boa8m9qe7nd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8Bm1v1WnwhLSt11I0SsM14dFOfC1K64E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956797754829-4t36ifpn5of6nt4c5c135boa8m9qe7nd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple"
+    android:layout_marginBottom="10dp"
+    android:elevation="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/acc_img"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/account"
+            app:civ_border_color="@color/purple"
+            />
+
+
+        <TextView
+            android:id="@+id/acc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

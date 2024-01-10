@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_8"
+    android:id="@+id/item_category_layout"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="0dp"
+    android:elevation="8dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="2dp"
+    >
+
+        <ImageView
+            android:id="@+id/cat_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/fuel"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:id="@+id/cat_name"
+            android:layout_toEndOf="@+id/cat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/expense"
+            android:textColor="@color/blackish_txt"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerVertical="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete_24"
+
+            android:visibility="gone"
+            />
+
+
+
+
+
+</RelativeLayout>

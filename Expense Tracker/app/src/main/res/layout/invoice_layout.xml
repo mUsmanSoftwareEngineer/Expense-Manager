@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="20dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    app:cardCornerRadius="18dp"
+    android:id="@+id/background_card"
+    app:cardBackgroundColor="@color/purple"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="false"
+        android:id="@+id/invoice_linear"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/invoice_category_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/money"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/invoice_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_name"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/invoice_currency_symbols"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currencySymbols"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/invoice_currency_symbols"
+                android:id="@+id/invoice_currecny_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balanceAmount"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

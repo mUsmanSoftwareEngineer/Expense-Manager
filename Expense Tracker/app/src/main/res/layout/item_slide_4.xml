@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/imageeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_120sdp"
+                    android:src="@drawable/aeroplane" />
+
+                <TextView
+                    android:id="@+id/fromhere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageeee"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="20dp"
+                    android:text="Download &amp; Add"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_below="@+id/fromhere"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/backpack" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_margin="@dimen/_10sdp"
+
+                        android:src="@drawable/bell_icon" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/saloon" />
+
+                </LinearLayout>
+                <!-- <TextView
+                     android:padding="20dp"
+                     android:layout_marginBottom="50dp"
+                     android:layout_alignParentBottom="true"
+                     android:textAlignment="center"
+                     android:textColor="@color/primary_text_light"
+                     android:text="@string/description_slide_1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />-->
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

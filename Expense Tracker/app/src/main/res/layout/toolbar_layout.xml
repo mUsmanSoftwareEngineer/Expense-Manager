@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.AddIncomeExpense"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_button"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/iconTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/iconTxt"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/back"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/header_txt_color_purple"
+        android:textSize="22sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:gravity="center|center_vertical"
+        android:layout_centerVertical="true"
+        android:elevation="8dp"
+        android:textAlignment="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/bg_7"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/add_new_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/deleteBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/delete"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        />
+
+</RelativeLayout>

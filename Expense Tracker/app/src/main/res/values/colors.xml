@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#172331</color>
+    <color name="colorPrimaryDark">#172331</color>
+    <color name="colorAccent">#172331</color>
+
+
+    <color name="lightWhite">#B8BDC1</color>
+
+
+    //colorPalette
+    <color name="header_txt_color_purple">#2f4993</color>
+    <color name="purple">#2f4993</color>
+    <color name="orange">#ef6145</color>
+    <color name="light_purple">#c5d8ff</color>
+    <color name="light_orange">#fe8972</color>
+    <color name="yellow">#ffd426</color>
+    <color name="light_green">#62feed</color>
+    <color name="light_yellow">#fdc472</color>
+    <color name="background_screen_color">#f5f5f6</color>
+    <color name="blackish_txt">#0e111f</color>
+    <color name="card_color">#2B417F</color>
+    <color name="transaction_note_color">#B3B3C2</color>
+    <color name="nav_color">#ffffff</color>
+    <color name="notes_bg_color">#D3D3D8</color>
+    <color name="item_bg">#2f4993</color>
+    <color name="nav_item_icon">#FFFFFF</color>
+
+
+    <color name="cat_color_1">#D5ACA4</color>
+    <color name="cat_color_2">#399C75</color>
+    <color name="cat_color_3">#64A6DA</color>
+    <color name="cat_color_4">#964AA6</color>
+    <color name="cat_color_5">#C88521</color>
+    <color name="cat_color_6">#421597</color>
+    <color name="cat_color_7">#59BFB6</color>
+    <color name="cat_color_8">#00AA07</color>
+    <color name="cat_color_9">#877A0E</color>
+    <color name="cat_color_10">#515715</color>
+    <color name="bg_color">#FFFFFF</color>
+    <color name="add_account_name_bg_color">#FFFFFF</color>
+
+
+</resources>

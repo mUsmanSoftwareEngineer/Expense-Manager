@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_screen_color">#060606</color>
+    <color name="nav_color">#060606</color>
+    <color name="header_txt_color_purple">#ffffff</color>
+    <color name="purple">#2f4993</color>
+    <color name="light_purple">#c5d8ff</color>
+    <color name="card_color">#2B417F</color>
+    <color name="bg_color">#303030</color>
+    <color name="blackish_txt">#ffffff</color>
+    <color name="item_bg">#ffffff</color>
+    <color name="notes_bg_color">#303030</color>
+    <color name="nav_item_icon">#000000</color>
+
+</resources>
